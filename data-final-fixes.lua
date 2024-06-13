@@ -48,9 +48,19 @@ local function makeStrong(entity)
 end
 	
 
-for k,spawner in pairs(data.raw["unit-spawner"]) do
-	makeStrong(spawner)
-end
-for k,worm in pairs(data.raw["turret"]) do
-	makeStrong(worm)
+if get_only_vanilla_entities() then 
+	makeStrong(data.raw.turret["behemoth-worm-turret"])
+	makeStrong(data.raw.turret["big-worm-turret"])
+	makeStrong(data.raw.turret["medium-worm-turret"])
+	makeStrong(data.raw.turret["small-worm-turret"])
+
+	makeStrong(data.raw["unit-spawner"]["biter-spawner"])
+	makeStrong(data.raw["unit-spawner"]["spitter-spawner"])
+else
+	for k,spawner in pairs(data.raw["unit-spawner"]) do
+		makeStrong(spawner)
+	end
+	for k,worm in pairs(data.raw["turret"]) do
+		makeStrong(worm)
+	end
 end

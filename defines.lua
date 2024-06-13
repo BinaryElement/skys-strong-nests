@@ -10,6 +10,7 @@ local new_percent_resistance = settings.startup["new-percent-resistance"].value
 local health_regeneration_addition = settings.startup["health-regeneration-addition"].value
 local health_regeneration_multiplier = settings.startup["health-regeneration-multiplier"].value
 local health_regeneration_percent_addition = settings.startup["health-regeneration-percentage-addition"].value
+local only_vanilla_entities = settings.startup["only-vanilla-entities"].value
 
 function get_health_addition()
 	return health_addition
@@ -65,6 +66,10 @@ end
 
 function get_health_regeneration_percent_addition()
 	return health_regeneration_percent_addition
+end
+
+function get_only_vanilla_entities()
+	return only_vanilla_entities
 end
 
 function tableContains(table, value) 

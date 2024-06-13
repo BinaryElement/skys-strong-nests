@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 07. 06. 2024
+  Features:
+    - Implemented option for forcing the mod to use only vanilla entities
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 07. 06. 2024
+  Features:
+    - Initial release of Strong Nests fork

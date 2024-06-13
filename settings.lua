@@ -107,5 +107,12 @@ settings = {
         maximum_value = 100,
         setting_type = "startup"
     },
+    { 
+        name = "only-vanilla-entities",
+        type = "bool-setting",
+        order = "fa",
+        default_value = false,
+        setting_type = "startup"
+    },
 }
 data:extend(settings)
